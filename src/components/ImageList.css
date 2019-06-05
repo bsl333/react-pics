@@ -1,0 +1,15 @@
+.image-list {
+  display: grid;
+  /* 1fr means equal sizing for every column we create */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  /* sets the distance between rows, then columns (if two args are provided */
+  grid-gap: 0 10px;
+  /* height of a row */
+  grid-auto-rows: 5px;
+}
+
+.image-list img {
+  width: 250px;
+  /* this says how many rows a given image can span */
+  /* grid-row-end: span 2; */
+}
